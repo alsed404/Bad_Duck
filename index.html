@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Duck</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+<style>
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center1 {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+  .btn-with-img {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .btn-with-img img {
+    width: 100px; 
+    height: auto;
+  }
+  .hidden-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <div class="center2">
+        <img src="/img/bad_duck.png" alt="image" width="200" height="auto">
+    </div>
+<div class="center">
+    <h1> Can You Find The Flag?</h1>
+</div>
+<div class="center1"><div style="text-align: center;">
+  <button class="btn-with-img" onclick="showText()">
+    <img src="/img/Hint.jpg" alt="Button">
+  </button>
+  <div id="text" class="hidden-text">Seek beyond the surface, where backups quietly lie</div>
+</div>
+
+<script>
+  function showText() {
+    document.getElementById("text").style.display = "block";
+  }
+</script>
+</div>
+</body>
+</html>
